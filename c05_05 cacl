@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n1,n2,r;
+    char op;
+    cin >> n1 >> op >> n2;
+    if(op== '+') r = n1 +n2;
+    if(op== '-') r = n1-n2;
+    if(op== '*') r = n1 *n2;
+    if(op== '/') r = n1/n2;
+    cout << r;
+    return 0;
+}
