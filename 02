@@ -1,0 +1,15 @@
+//ลบอันเก่าละวาง
+#include <iostream>
+using namespace std;
+int main() {
+    double order=0, discount=0, total=0;
+    cin >> order;
+    discount = (int)(order/350) * 15;
+    total = order - discount;
+    printf("Order:%.2f\n",order);
+    printf("Discount:%.2f\n",discount);
+    printf("Total:%.2f\n",total);
+
+
+    return 0;
+}
