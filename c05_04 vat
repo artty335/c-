@@ -1,0 +1,26 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    double purchaseAmount = 0;
+
+    for (int i = 0; i < n; i++) {
+        double price;
+        cin >> price;
+        purchaseAmount += price;
+    }
+
+    cout << "Order:" << fixed << setprecision(2) << purchaseAmount <<endl;
+
+    double vat = purchaseAmount * 0.06;
+    cout << "Vat:" << fixed << setprecision(2) << vat <<endl;
+
+    double totalAmount = purchaseAmount + vat;
+    cout << "Total:" << fixed << setprecision(2) << totalAmount << endl;
+    return 0;
+}
