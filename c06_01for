@@ -1,0 +1,36 @@
+//ลบหมดละวาง
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int f1, f2, k, t=0;
+
+    cin >> f1 >> f2;
+    if( f1 <= f2) {
+        for (k=f1; k<=f2; k++) {
+            cout << k << " ";
+            t++;
+            if (t==20) {
+                cout << endl;
+                t=0;
+            }
+        }
+
+    } else {
+        for (k=f1; k>=f2; k--) {
+            cout << k << " ";
+            t++;
+            if (t==20) {
+                cout << endl;
+                t=0;
+            }
+        }
+
+
+    }
+
+
+    return 0;
+}
